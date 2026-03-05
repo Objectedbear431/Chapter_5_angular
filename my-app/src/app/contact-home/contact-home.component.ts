@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './contact-home.component.html',
   styleUrl: './contact-home.component.css'
 })
+
 export class ContactHomeComponent implements OnInit {
   isUnchanged = true;
 
