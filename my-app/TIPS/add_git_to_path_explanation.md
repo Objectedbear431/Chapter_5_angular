@@ -101,3 +101,32 @@ ls C:\Users\snhrg\WGU
 ```powershell
 Test-Path "C:\Program Files\nodejs"
 ```
+
+# Search for a file by name
+
+```powershell
+Get-ChildItem -Recurse -Filter services-home.component.html
+```
+## SHORT VERSION:
+
+```powershell
+gci -r -filter services-home.component.html
+```
+
+# Search for files containing part of a name
+
+```powershell
+Get-ChildItem -Recurse *services*
+```
+
+# Search only for a specific file type
+
+```powershell
+Get-ChildItem -Recurse *.html
+```
+
+# Search inside files (very useful)
+
+```powershell
+Select-String -Path "*.html" -Pattern "appHighlight" -Recurse
+```
